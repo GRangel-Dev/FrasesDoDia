@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Frases do Dia</string>
+    <string name="button1">NOVA FRASE</string>
+    <string name="TextView1">Um pequeno pensamento positivo\n pela manhã pode\n mudar todo seu dia.</string>
+    <string name="TextView2">"Develpment: "</string>
+    <string name="TextView3">Germano Rangel - Dev</string>
+    <string name="TextView4">Development:</string>
 </resources>
