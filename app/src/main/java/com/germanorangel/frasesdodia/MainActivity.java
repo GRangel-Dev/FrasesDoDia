@@ -2,6 +2,7 @@ package com.germanorangel.frasesdodia;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -52,5 +53,12 @@ public class MainActivity extends AppCompatActivity {
         int numero = new Random().nextInt(31);
         TextView texto = findViewById(R.id.textResultado);
         texto.setText(frases[numero]);
+    }
+
+    public void compartilharDados(View view){
+        Intent intent = new Intent (Intent.ACTION_SEND);
+        intent.setType("text/plain");
+        startActivity(Intent.createChooser(intent, "Escolha um app para compartilhar"));
+
     }
 }
